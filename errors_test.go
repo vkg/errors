@@ -28,3 +28,7 @@ func BenchmarkSoul(b *testing.B) {
 		_ = fmt.Sprintf("%+v", err)
 	}
 }
+
+func TestWrap(t *testing.T) {
+	t.Logf("%+v\n", Wrap(errors.New("vkg")))
+}
