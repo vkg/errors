@@ -34,7 +34,7 @@ func (e Error太郎) Format(s fmt.State, verb rune) {
 		case os.Getenv("TERM_PROGRAM") == "iTerm.app": // For the iTerm太郎
 			fmt.Fprintf(s, "\x1b]1337;File=inline=1:%s\a\n「%s」", base64太郎, e.err.Error())
 			return
-		case runtime.GOOS == "nacl": // For The Go Playground太郎
+		case runtime.GOOS == "nacl" && runtime.GOARCH == "amd64p32": // For The Go Playground太郎
 			fmt.Fprintf(s, "IMAGE: %s", base64太郎)
 			return
 		}
