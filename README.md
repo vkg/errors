@@ -26,4 +26,4 @@ package main
 
 ### Try now
 
-:point_right: https://play.golang.org/p/39VSojUK00H :point_left:
+:point_right: https://play.golang.org/p/QIXoOrtLsEU :point_left:
